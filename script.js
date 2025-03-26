@@ -224,4 +224,111 @@ partCards.forEach(card => {
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0)';
     });
+});
+
+// Şifre göster/gizle işlevi
+document.querySelectorAll('.toggle-password').forEach(button => {
+    button.addEventListener('click', function() {
+        const input = this.previousElementSibling;
+        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+        input.setAttribute('type', type);
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+});
+
+// Giriş formu işleme
+const loginForm = document.getElementById('loginForm');
+if (loginForm) {
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const remember = document.getElementById('remember').checked;
+
+        // Burada API'ye giriş isteği gönderilebilir
+        console.log('Giriş bilgileri:', { email, password, remember });
+
+        // Başarılı giriş sonrası yönlendirme
+        // window.location.href = 'index.html';
+    });
+}
+
+// Kayıt formu işleme
+const registerForm = document.getElementById('registerForm');
+if (registerForm) {
+    registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const terms = document.getElementById('terms').checked;
+
+        // Şifre kontrolü
+        if (password !== confirmPassword) {
+            alert('Şifreler eşleşmiyor!');
+            return;
+        }
+
+        // Şifre güvenlik kontrolü
+        if (password.length < 8) {
+            alert('Şifre en az 8 karakter olmalıdır!');
+            return;
+        }
+
+        // Kullanım koşulları kontrolü
+        if (!terms) {
+            alert('Kullanım koşullarını kabul etmelisiniz!');
+            return;
+        }
+
+        // Burada API'ye kayıt isteği gönderilebilir
+        console.log('Kayıt bilgileri:', {
+            firstName,
+            lastName,
+            email,
+            phone,
+            password
+        });
+
+        // Başarılı kayıt sonrası yönlendirme
+        // window.location.href = 'login.html';
+    });
+}
+
+// Telefon numarası formatı
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+    phoneInput.addEventListener('input', function(e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+}
+
+// Mobil menü toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        this.classList.toggle('active');
+    });
+}
+
+// Sayfa yüklendiğinde aktif menü öğesini işaretle
+document.addEventListener('DOMContentLoaded', function() {
+    const currentLocation = window.location.pathname;
+    const menuItems = document.querySelectorAll('.nav-links a');
+    
+    menuItems.forEach(item => {
+        if (item.getAttribute('href') === currentLocation) {
+            item.classList.add('active');
+        }
+    });
 }); 
