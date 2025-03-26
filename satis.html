@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoCars - Araç Alım Satım</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="kiralama.html">Araç Kirala</a></li>
+                <li><a href="satis.html" class="active">Araç Al/Sat</a></li>
+                <li><a href="yedek-parca.html">Yedek Parça</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="login-btn">Giriş Yap</button>
+                <button class="register-btn">Üye Ol</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana Bölüm -->
+    <main>
+        <!-- Araç Arama -->
+        <section class="search-section">
+            <div class="search-container">
+                <h1>Hayalinizdeki Araca Ulaşın</h1>
+                <form class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Marka</label>
+                            <select required>
+                                <option value="">Marka Seçiniz</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Model</label>
+                            <select required>
+                                <option value="">Model Seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Yıl</label>
+                            <select required>
+                                <option value="">Yıl Seçiniz</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Araç Ara</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Vitrin Araçları -->
+        <section class="showcase-section">
+            <h2>Vitrin Araçları</h2>
+            <div class="showcase-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://i.ibb.co/YhKqNvZ/skoda-superb.jpg" alt="Skoda Superb">
+                        <span class="price">1.485.000 ₺</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Skoda Superb</h3>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2019</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                            <span><i class="fas fa-road"></i> 56.000 KM</span>
+                        </div>
+                        <button class="details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <!-- Diğer araç kartları buraya eklenecek -->
+            </div>
+        </section>
+
+        <!-- Aracını Sat -->
+        <section class="sell-section">
+            <div class="sell-container">
+                <h2>Aracınızı Değerinde Satın</h2>
+                <div class="sell-content">
+                    <div class="sell-info">
+                        <h3>Neden Bizi Tercih Etmelisiniz?</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ücretsiz ekspertiz hizmeti</li>
+                            <li><i class="fas fa-check"></i> Hızlı ve güvenilir ödeme</li>
+                            <li><i class="fas fa-check"></i> Profesyonel değerleme</li>
+                            <li><i class="fas fa-check"></i> Tüm evrak işlemleri bizden</li>
+                        </ul>
+                    </div>
+                    <form class="sell-form">
+                        <div class="form-group">
+                            <label>Marka</label>
+                            <input type="text" required placeholder="Araç markası">
+                        </div>
+                        <div class="form-group">
+                            <label>Model</label>
+                            <input type="text" required placeholder="Araç modeli">
+                        </div>
+                        <div class="form-group">
+                            <label>Yıl</label>
+                            <input type="number" required placeholder="Araç yılı">
+                        </div>
+                        <div class="form-group">
+                            <label>Kilometre</label>
+                            <input type="number" required placeholder="Araç kilometresi">
+                        </div>
+                        <button type="submit" class="submit-btn">Hemen Değerle</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bölümü -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                <p>Türkiye'nin lider otomotiv platformu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="kiralama.html">Araç Kirala</a></li>
+                    <li><a href="satis.html">Araç Al/Sat</a></li>
+                    <li><a href="yedek-parca.html">Yedek Parça</a></li>
+                    <li><a href="index.html#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OtoCars. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

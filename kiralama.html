@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoCars - Araç Kiralama</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="kiralama.html" class="active">Araç Kirala</a></li>
+                <li><a href="satis.html">Araç Al/Sat</a></li>
+                <li><a href="yedek-parca.html">Yedek Parça</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="login-btn">Giriş Yap</button>
+                <button class="register-btn">Üye Ol</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana Bölüm -->
+    <main>
+        <!-- Kiralama Formu -->
+        <section class="rental-section">
+            <div class="rental-container">
+                <h1>Ayrıcalıklı Araç Kiralama Deneyimi</h1>
+                <div class="rental-tabs">
+                    <button class="rental-tab active">Günlük Kiralama</button>
+                    <button class="rental-tab">Aylık Kiralama</button>
+                </div>
+                <form class="rental-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Alış Lokasyonu</label>
+                            <select required>
+                                <option value="">Lokasyon Seçiniz</option>
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="izmir">İzmir</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Dönüş Lokasyonu</label>
+                            <select required>
+                                <option value="">Lokasyon Seçiniz</option>
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="izmir">İzmir</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="far fa-calendar-alt"></i> Alış Tarihi</label>
+                            <input type="datetime-local" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="far fa-calendar-alt"></i> Dönüş Tarihi</label>
+                            <input type="datetime-local" required>
+                        </div>
+                        <button type="submit" class="search-btn">Araç Ara</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Araç Kategorileri -->
+        <section class="categories-section">
+            <h2>Araç Kategorileri</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://i.ibb.co/wS5JGx8/economy.jpg" alt="Ekonomik">
+                    <h3>Ekonomik</h3>
+                    <p>Günlük 500 TL'den başlayan fiyatlarla</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://i.ibb.co/M6B4ydL/business.jpg" alt="Business">
+                    <h3>Business</h3>
+                    <p>Günlük 800 TL'den başlayan fiyatlarla</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://i.ibb.co/qRY9rQg/premium.jpg" alt="Premium">
+                    <h3>Premium</h3>
+                    <p>Günlük 1200 TL'den başlayan fiyatlarla</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://i.ibb.co/5kjWJVZ/luxury.jpg" alt="Lüks">
+                    <h3>Lüks</h3>
+                    <p>Günlük 2000 TL'den başlayan fiyatlarla</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bölümü -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                <p>Türkiye'nin lider otomotiv platformu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="kiralama.html">Araç Kirala</a></li>
+                    <li><a href="satis.html">Araç Al/Sat</a></li>
+                    <li><a href="yedek-parca.html">Yedek Parça</a></li>
+                    <li><a href="index.html#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OtoCars. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

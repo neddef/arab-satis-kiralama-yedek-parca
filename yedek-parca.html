@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoCars - Yedek Parça</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="kiralama.html">Araç Kirala</a></li>
+                <li><a href="satis.html">Araç Al/Sat</a></li>
+                <li><a href="yedek-parca.html" class="active">Yedek Parça</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="login-btn">Giriş Yap</button>
+                <button class="register-btn">Üye Ol</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana Bölüm -->
+    <main>
+        <!-- Parça Arama -->
+        <section class="parts-search-section">
+            <div class="search-container">
+                <h1>Orijinal Yedek Parça Arama</h1>
+                <form class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Marka</label>
+                            <select required>
+                                <option value="">Marka Seçiniz</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Model</label>
+                            <select required>
+                                <option value="">Model Seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Parça Kategorisi</label>
+                            <select required>
+                                <option value="">Kategori Seçiniz</option>
+                                <option value="motor">Motor Parçaları</option>
+                                <option value="fren">Fren Sistemi</option>
+                                <option value="elektrik">Elektrik Aksamı</option>
+                                <option value="kaporta">Kaporta</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Parça Ara</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Parça Kategorileri -->
+        <section class="parts-categories-section">
+            <h2>Popüler Parça Kategorileri</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Motor Parçaları">
+                    <h3>Motor Parçaları</h3>
+                    <p>Motor, Piston, Subap ve daha fazlası</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1486754735734-325b5831c3ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Fren Sistemi">
+                    <h3>Fren Sistemi</h3>
+                    <p>Fren Diski, Balata, Kaliper</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1563630381190-77c336ea545a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Elektrik Aksamı">
+                    <h3>Elektrik Aksamı</h3>
+                    <p>Akü, Far, Sensörler</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Kaporta">
+                    <h3>Kaporta</h3>
+                    <p>Tampon, Çamurluk, Kapı</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Öne Çıkan Parçalar -->
+        <section class="featured-parts-section">
+            <h2>Öne Çıkan Parçalar</h2>
+            <div class="parts-grid">
+                <div class="part-card">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Motor Yağı">
+                        <span class="price">750 ₺</span>
+                    </div>
+                    <div class="part-info">
+                        <h3>Motor Yağı</h3>
+                        <p>Shell Helix Ultra 5W-40 4L</p>
+                        <button class="details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <!-- Diğer parça kartları buraya eklenecek -->
+            </div>
+        </section>
+
+        <!-- Garanti ve Güvence -->
+        <section class="warranty-section">
+            <div class="warranty-container">
+                <h2>Garanti ve Güvence</h2>
+                <div class="warranty-grid">
+                    <div class="warranty-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>%100 Orijinal Ürün</h3>
+                        <p>Tüm ürünlerimiz orijinal ve garantilidir</p>
+                    </div>
+                    <div class="warranty-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Hızlı Teslimat</h3>
+                        <p>24 saat içinde kargoya teslim</p>
+                    </div>
+                    <div class="warranty-card">
+                        <i class="fas fa-undo"></i>
+                        <h3>İade Garantisi</h3>
+                        <p>14 gün içinde ücretsiz iade</p>
+                    </div>
+                    <div class="warranty-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Teknik Destek</h3>
+                        <p>7/24 uzman teknik destek</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bölümü -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://i.ibb.co/M6zDjXB/otocars-logo.png" alt="OtoCars Logo">
+                <p>Türkiye'nin lider otomotiv platformu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="kiralama.html">Araç Kirala</a></li>
+                    <li><a href="satis.html">Araç Al/Sat</a></li>
+                    <li><a href="yedek-parca.html">Yedek Parça</a></li>
+                    <li><a href="index.html#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OtoCars. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
