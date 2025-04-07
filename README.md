@@ -1,36 +1,26 @@
-# OtoCars - Araç Kiralama, Satış ve Yedek Parça Platformu
+# OtoCars - Araç Kiralama ve Satış Platformu
 
-Modern ve kullanıcı dostu bir otomotiv platformu. Araç kiralama, alım-satım ve yedek parça hizmetlerini tek bir platformda birleştiren web uygulaması.
+OtoCars, online ortamda araç satışı, kiralama ve yedek parça satış hizmeti sunan modern bir platformdur.
 
 ## Özellikler
 
-- **Araç Kiralama**
-  - Günlük ve aylık kiralama seçenekleri
-  - Lokasyon bazlı araç arama
-  - Farklı araç kategorileri (Ekonomik, Business, Premium, Lüks)
-
-- **Araç Alım-Satım**
-  - Detaylı araç arama
-  - Araç değerleme hizmeti
-  - Profesyonel ekspertiz desteği
-
-- **Yedek Parça**
-  - Orijinal ve yan sanayi parça seçenekleri
-  - Marka/model bazlı parça arama
-  - Garanti ve iade güvencesi
+- Araç kiralama ve satın alma
+- Yedek parça satışı
+- Online ödeme sistemi
+- Kullanıcı dostu arayüz
+- Responsive tasarım
+- Güvenli giriş ve kayıt sistemi
 
 ## Teknolojiler
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Google Fonts
-- Responsive Tasarım
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js (planlanan)
+- Veritabanı: MySQL/PostgreSQL (planlanan)
+- Mobil Uygulama: React Native (planlanan)
 
 ## Kurulum
 
-1. Repoyu klonlayın:
+1. Projeyi klonlayın:
    ```bash
    git clone https://github.com/neddef/arab-satis-kiralama-yedek-parca.git
    ```
@@ -40,20 +30,22 @@ Modern ve kullanıcı dostu bir otomotiv platformu. Araç kiralama, alım-satım
    cd arab-satis-kiralama-yedek-parca
    ```
 
-3. `index.html` dosyasını bir web tarayıcısında açın.
+3. Tarayıcınızda `index.html` dosyasını açın.
 
-## Kullanım
+## Geliştirme Planı
 
-- Ana sayfadan istediğiniz hizmeti seçin (Kiralama, Alım-Satım, Yedek Parça)
-- Her bölüm için özel olarak tasarlanmış arama ve filtreleme seçeneklerini kullanın
-- Detaylı bilgi için ilgili ürün/hizmet kartlarına tıklayın
+1. Frontend geliştirmeleri (tamamlandı)
+2. Backend API geliştirmesi
+3. Veritabanı entegrasyonu
+4. Ödeme sistemi entegrasyonu
+5. Mobil uygulama geliştirmesi
 
 ## Katkıda Bulunma
 
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: Detaylar'`)
-4. Branch'inize push yapın (`git push origin feature/yeniOzellik`)
+1. Bu projeyi fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
 5. Pull Request oluşturun
 
 ## Lisans
@@ -62,6 +54,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## İletişim
 
-Proje ile ilgili sorularınız için:
-- E-posta: info@otocars.com
-- Telefon: 0850 123 45 67 
+Proje Sahibi - [@neddef](https://github.com/neddef)
+
+Proje Linki: [https://github.com/neddef/arab-satis-kiralama-yedek-parca](https://github.com/neddef/arab-satis-kiralama-yedek-parca) 
